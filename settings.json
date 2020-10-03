@@ -1,0 +1,107 @@
+{
+    //---------------全局---------------
+    "workbench.colorTheme": "Visual Studio Light",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Menlo, Monaco",
+    "editor.lineNumbers": "relative",
+    "csharp.referencesCodeLens.enabled": false,
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": false,
+    //---------------C#-----------------
+    "[csharp]": {
+        "editor.defaultFormatter": "Leopotam.csharpfixformat"
+    },
+    //---------------vim----------------
+    "vim.vimrc.path": "$HOME/.vimrc",
+    "vim.vimrc.enable": true,
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/Cellar/neovim/0.4.3/bin/nvim",
+    "vim.leader": " ",
+    "vim.handleKeys": {
+        "<C-e>": false,
+    },
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<down>"
+            ]
+        },
+        {
+            "before": [
+                "<C-i>"
+            ],
+            "after": [
+                "<up>"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<tab>"
+            ],
+            "commands": [
+                ":+tabnext"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "l"
+            ],
+            "commands": [
+                ":vsplit",
+                "workbench.action.files.save",
+            ],
+            "after": [
+                "<c-w>",
+                "q"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "h"
+            ],
+            "commands": [
+                ":vsplit",
+                "workbench.action.files.save",
+            ],
+            "after": [
+                "<c-w>",
+                "q"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "i"
+            ],
+            "commands": [
+                ":split",
+                "workbench.action.files.save",
+            ],
+            "after": [
+                "<c-w>",
+                "q"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "j"
+            ],
+            "commands": [
+                ":split",
+                "workbench.action.files.save",
+            ],
+            "after": [
+                "<c-w>",
+                "q"
+            ]
+        },
+    ],
+}
