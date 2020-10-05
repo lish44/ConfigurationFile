@@ -181,12 +181,14 @@ Plug'vimwiki/vimwiki'
 "==
 "==
 "==
+
 call plug#end()
 "===========================插件配置=====================
 "==
 "==主题设置
 "==
-colorscheme dracula
+colorscheme sialoquent
+"colorscheme dracula
 
 
 "==
@@ -245,12 +247,19 @@ autocmd Filetype markdown inoremap ,c ```<Enter><++><Enter>```<Enter><Enter><++>
 autocmd Filetype markdown inoremap ,h ====<Space><++><Esc>F=hi
 autocmd Filetype markdown inoremap ,p ![](../pic/<++>) <++><Esc>F[a
 autocmd Filetype markdown inoremap ,a [](<++>) <++><Esc>F[a
+autocmd Filetype markdown inoremap ,l --------<Enter>
+autocmd Filetype markdown inoremap ,z []()[<++>](<++>)<Esc>F(;a
+"子标题
 autocmd Filetype markdown inoremap ,1 #<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ,2 ##<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ,3 ###<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ,4 ####<Space><Enter><++><Esc>kA
-autocmd Filetype markdown inoremap ,l --------<Enter>
-autocmd Filetype markdown inoremap ,z []()[<++>](<++>)<Esc>F(;a
-"===
+autocmd Filetype markdown inoremap ,5 #####<Space><Enter><++><Esc>kA
+autocmd Filetype markdown inoremap ,6 ######<Space><Enter><++><Esc>kA
+"带颜色强调
+autocmd Filetype markdown inoremap ,R <font color=#f4433c></font><Esc>6hi
+autocmd Filetype markdown inoremap ,G <font color=#0aa858></font><Esc>6hi
+autocmd Filetype markdown inoremap ,B <font color=#4285f4></font><Esc>6hi
+autocmd Filetype markdown inoremap ,Y <font color=#ffbc32></font><Esc>6hi
 "===
 
