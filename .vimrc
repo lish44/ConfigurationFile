@@ -104,7 +104,10 @@ noremap <C-j> 4<C-e>
 "===
 "===视图模式
 "===
-""vnoremap . :normal la
+
+" 复制到系统剪切板
+noremap <LEADER>y "+y
+noremap <LEADER>p "+p
 "======
 
 "===
@@ -261,5 +264,10 @@ autocmd Filetype markdown inoremap ,R <font color=#f4433c></font><Esc>6hi
 autocmd Filetype markdown inoremap ,G <font color=#0aa858></font><Esc>6hi
 autocmd Filetype markdown inoremap ,B <font color=#4285f4></font><Esc>6hi
 autocmd Filetype markdown inoremap ,Y <font color=#ffbc32></font><Esc>6hi
+" kbd
+autocmd Filetype markdown inoremap ,k <kbd></kbd><++><Esc>F<;i
+
+autocmd Filetype markdown inoremap ,r [return][./index.md]
+
 "===
 
