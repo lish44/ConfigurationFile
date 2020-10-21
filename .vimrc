@@ -171,7 +171,7 @@ Plug'kshenoy/vim-signature'
 "==
 "==格式化插件noremap <F3> :Autoformat<CR>
 "==
-"Plug'Chiel92/vim-autoformat' 
+Plug'Chiel92/vim-autoformat' 
 "==
 "==Markdownpreview
 "==
@@ -239,11 +239,11 @@ let g:vimwiki_list = [{'path': '~/Library/Mobile\ Documents/iCloud\~com\~coderfo
 "==
 autocmd Filetype markdown inoremap ,m <Esc>/<++><CR>:nohlsearch<CR>c4l
 autocmd Filetype markdown inoremap ,n ---<Enter><Enter>
-autocmd Filetype markdown inoremap ,b **** <++><Esc>F*hi
+autocmd Filetype markdown inoremap ,b ____ <++><Esc>F_hi
 "字画横杠
 autocmd Filetype markdown inoremap ,s ~~~~ <++><Esc>F~hi
-"强调字体
-autocmd Filetype markdown inoremap ,i ** <++><Esc>F*i
+"斜体
+autocmd Filetype markdown inoremap ,i __ <++><Esc>F_i
 "强调背景
 autocmd Filetype markdown inoremap ,d `` <++><Esc>F`i
 autocmd Filetype markdown inoremap ,c ```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA
@@ -260,14 +260,15 @@ autocmd Filetype markdown inoremap ,4 ####<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ,5 #####<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ,6 ######<Space><Enter><++><Esc>kA
 "带颜色强调
-autocmd Filetype markdown inoremap ,R <font color=#f4433c></font><Esc>6hi
-autocmd Filetype markdown inoremap ,G <font color=#0aa858></font><Esc>6hi
-autocmd Filetype markdown inoremap ,B <font color=#4285f4></font><Esc>6hi
-autocmd Filetype markdown inoremap ,Y <font color=#ffbc32></font><Esc>6hi
+autocmd Filetype markdown inoremap ,R <font color=#f4433c></font><Space><++><Esc>2F<i
+autocmd Filetype markdown inoremap ,G <font color=#0aa858></font><Space><++><Esc>2F<i
+autocmd Filetype markdown inoremap ,B <font color=#4285f4></font><Space><++><Esc>2F<i
+autocmd Filetype markdown inoremap ,Y <font color=#ffbc32></font><Space><++><Esc>2F<i
 " kbd
 autocmd Filetype markdown inoremap ,k <kbd></kbd><++><Esc>F<;i
 
-autocmd Filetype markdown inoremap ,r [return][./index.md]
+autocmd Filetype markdown inoremap ,r [return](./index.md)
+autocmd Filetype markdown inoremap ,t :-------:
 
 "===
 
